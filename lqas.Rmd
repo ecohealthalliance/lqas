@@ -1,0 +1,60 @@
+---
+title: "Lot Quality Assurance Sampling"
+subtitle: "Theory and Applications"  
+author: "Ernest Guevarra"
+date: '23 February 2021'
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      titleSlideClass: ["right", "bottom"]
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_mono_light(
+  #base_color = "#509935",
+  base_color = "#000000",
+  base_font_size = "22px",
+  title_slide_background_color = "#FFFFFF",
+  title_slide_background_image = "images/ecohealth_title_background_4by3.png",
+  title_slide_background_size = "contain",
+  #title_slide_text_color = "#509935",
+  title_slide_text_color = "#000000",
+  background_image = "images/ecohealth_slide_background_4by3.png",
+  header_font_google = google_font("Fira Sans"),
+  text_font_google = google_font("Fira Sans Condensed"),
+  code_font_google = google_font("Fira Mono"),
+  code_font_size = "0.7rem",
+  text_slide_number_font_size = "1em",
+  link_color = "#509935"
+)
+```
+
+# Outline
+
+* Background on LQAS
+
+* How to perform LQAS
+
+    - Statistical design
+    - Sampling design
+
+* Case Study: Sierra Leone National CMAM Coverage Survey
+
+* Possible applications to One Health programmes
+
+---
+
+# Background
+
+
+
