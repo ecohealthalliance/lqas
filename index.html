@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Lot Quality Assurance Sampling</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ernest Guevarra" />
+    <meta name="date" content="2021-04-13" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: right, bottom, title-slide
+
+# Lot Quality Assurance Sampling
+## Theory and applications
+### Ernest Guevarra
+### 13 April 2021
+
+---
+
+
+
+
+
+
+# Outline
+
+* What is LQAS?
+
+* How to perform LQAS
+
+    - Statistical design
+    - Sampling design
+
+* Case Study: Sierra Leone National CMAM Coverage Survey
+
+* Possible applications to One Health programmes
+
+---
+
+# What is LQAS?
+
+* analytical approach for robust classification of "lots" (e.g., *set of outputs or products*, *service delivery units*, *programme areas*) based on a pre-determined standard or cut-off;
+
+* devised and used in industry/manufacturing for performing quality assurance at minimal cost;
+
+* adopted in health to assess prevalence of specific conditions, to assess programme quality, or to determine health care service delivery performance
+
+* cost reduction is achieved primarily through much smaller sample size requirements.
+
+---
+
+# LQAS - statistical design
+
+* LQAS is more an analysis technique than a sampling approach;
+
+* classifies rather than estimates - answers the question:
+
+**"How many true values do I need to find from a representative sample in order for me to determine that the whole lot is above or below a given standard?"**
+
+---
+
+# LQAS - statistical design
+
+To answer this question, we need to:
+
+* **determine standards** - should be pre-determined and should be based on either empirically verified values or agreed norms/standards
+
+* **determine sample size** - sample size calculation is based on the 1) standards used; 2) the maximum acceptable `\(\alpha\)` error (false positives); 3) maximum acceptable `\(\beta\)` error (false negatives); and 4) population (to allow for finite population correction)
+
+* These parameters will allow us to make a sampling plan to answer the earlier question:
+
+$$ d ~ = ~ \left \lfloor{n ~ \times ~ \frac{p}{100}} \right \rfloor $$
+---
+
+class: center, middle
+
+# LQAS - example
+
+Assume that in the specific lot / study area, the total population is 500 individuals. We want to assess whether the prevalence of Disease X in the population is at least 50% with a maximum acceptable `\(\alpha\)` error of 10% and a maximum acceptable `\(\beta\)` error of 10%.
+
+---
+
+# LQAS - sampling plan
+
+* Sample size - see sample size table; see http://www.brixtonhealth.com/hyperLQAS.html
+
+* Calculate *decision rule*
+
+$$ d ~ = ~ \left \lfloor{37 ~ \times ~ \frac{50}{100}} \right \rfloor ~ = ~ \left \lfloor{18.5} \right \rfloor ~ = ~ 18 $$
+
+* We will need to find more than 18 cases to classify this area as having a Disease X prevalence of at least 50%
+
+---
+
+# LQAS - survey design
+
+* Once you have a sampling plan, designing the survey and sampling itself will be based on any other probabilistic survey design;
+
+* Ensure sampling units within the lot have an equal chance of being selected;
+
+* If using cluster sampling, account for design effect;
+
+* Can use simple random sampling, systematic random sampling, spatial sampling approaches
+
+---
+
+class: center, middle
+
+# Questsions so far?
+
+---
+
+class: center, middle
+
+# Case Study: Sierra Leone National CMAM Programme Coverage Survey
+
+---
+
+# CMAM and Sierra Leone
+
+.pull-left[
+  
+* Assess the coverage of treatment programme for severe acute undernutrition (wasting) in children under 5
+  
+* Severe wasting is rare; up to 5% in famine situations; typical high values about 2-3% in "normal" times
+  
+* Team of district level health managers were trained to conduct LQAS in each of the 14 districts of Sierra Leone (the "lots")
+
+]
+
+.pull-right[
+
+  .center[![sl_team](images/IMG_1761.jpg)]
+
+]
+
+---
+
+# Results - map
+
+.pull-left[
+
+.center[![sl_map](images/treatCoverageSierraLeone.png)]
+
+]
+
+
+.pull-right[
+
+* Surveys took 3-4 days per district; on last day, team was able to report immediately the results for the district
+
+* Only 3 out of 14 districts performed moderately with a CMAM coverage of between 20% and 50%
+
+]
+
+---
+
+# Results - table
+
+.pull-left[
+
+* Data collected from each lot can be aggregated to estimate coverage throughout the country
+  
+* Coverage estimate for the whole country was at 19.7% (15.7% - 23.7%)
+
+]
+
+.pull-right[
+
+  .center[![sl_tab](images/sleacResults.png)]
+
+]
+
+
+---
+
+# Data system
+
+.pull-left[
+
+* Survey/study was simple enough that data system was mainly paper-based
+
+]
+
+.pull-right[
+
+.center[![sl_tab](images/IMG_1801.jpg)]
+
+]
+
+---
+
+# Analysis
+
+.pull-left[
+
+* Analysis approach was simple enough that it can be done at real time with results reportable as soon as the survey/study is finished
+
+]
+
+.pull-right[
+
+.center[![sl_analysis](images/IMG_1804.jpg)]
+
+]
+
+---
+
+class: center, middle
+
+# Questions so far?
+
+---
+
+# Possible applications to One Health programmes
+
+* Pre-study assessments to aid site selection or study design
+
+* Programme monitoring and evaluation
+
+* Surveillance, early warning systems (?)
+
+---
+
+class: center, middle
+
+# Thank you!
+
+Slides can be viewed at https://ecohealthalliance.github.io/lqas or PDF version downloaded at https://ecohealthalliance.github.io/lqas/lqas.pdf
+
+R scripts for slides available at https://github.com/ecohealthalliance/lqas
+
+---
+
+# Links to relevant LQAS references and further readings
+
+Myatt M, Mai NP, Quynh NQ, Nga NH, Tai HH, Long NH, Minh TH, Limburg H. **Using lot quality-assurance sampling and area sampling to identify priority areas for trachoma control: Viet Nam**. *Bull World Health Organ*. 2005 Oct;83(10):756-63. Epub 2005 Nov 10. PMID: 16283052; PMCID: PMC2626415. [link](https://pubmed.ncbi.nlm.nih.gov/16283052/)
+
+Myatt M, Bennett DE. **A novel sequential sampling technique for the surveillance of transmitted HIV drug resistance by cross-sectional survey for use in low resource settings**. *Antivir Ther*. 2008;13 Suppl 2:37-48. PMID: 18575190. [link](https://pubmed.ncbi.nlm.nih.gov/18575190/)
+
+Ernest Guevarra, Saul Guerrero, and Mark Myatt. Using SLEAC as a wide-area survey method. Field Exchange 42, January 2012. p39. www.ennonline.net/fex/42/using
+
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
